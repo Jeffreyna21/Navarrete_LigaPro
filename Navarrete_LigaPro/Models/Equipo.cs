@@ -25,6 +25,10 @@ namespace Navarrete_LigaPro.Models
 
         public int Puntos => (partidosGanados * 3) + (partidosEmpatados * 1);
 
+        [DisplayName("Escudo")]
+        public string Imagen { get; set;}
+        public string Descripcion { get; set; }
+
 
     }
 }

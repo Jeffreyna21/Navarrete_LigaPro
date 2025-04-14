@@ -1,12 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace Navarrete_LigaPro.Data
-{
-    public class equipo : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
+﻿{
+    "Id": 1,
+    "Nombre": "Liga de Quito",
+    "partidosJugados": 10,
+    "partidosGanados": 10,
+    "partidosEmpatados": 0,
+    "partidosPerdidos": 0,
+}, {
+    "Id": 2,
+    "Nombre": "Independiente del Valle",
+    "partidosJugados": 10,
+    "partidosGanados": 5,
+    "partidosEmpatados": 1,
+    "partidosPerdidos": 3
+}, {
+    "Id": 3,
+    "Nombre": "Barcelona SC",
+    "partidosJugados": 10,
+    "partidosGanados": 4,
+    "partidosEmpatados": 2,
+    "partidosPerdidos": 4
+}, {
+    "Id": 4,
+    "Nombre": "Emelec",
+    "partidosJugados": 10,
+    "partidosGanados": 3,
+    "partidosEmpatados": 2,
+    "partidosPerdidos": 5
 }

@@ -34,7 +34,26 @@ namespace Navarrete_LigaPro.Repositories
                 partidosPerdidos = 3
             };
             equipos.Add(idv);
-
+            Equipo barcelona = new Equipo
+            {
+                Id = 3,
+                Nombre = "Barcelona SC",
+                partidosJugados = 10,
+                partidosGanados = 4,
+                partidosEmpatados = 2,
+                partidosPerdidos = 4
+            };
+            equipos.Add(barcelona);
+            Equipo emelec = new Equipo
+            {
+                Id = 4,
+                Nombre = "Emelec",
+                partidosJugados = 10,
+                partidosGanados = 3,
+                partidosEmpatados = 2,
+                partidosPerdidos = 5
+            };
+            equipos.Add(emelec);
             return (equipos);
 
         }
