@@ -1,0 +1,12 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Navarrete_LigaPro.Data
+{
+    public class equipo : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}
