@@ -1,0 +1,42 @@
+﻿@model Navarrete_LigaPro.Models.Equipo
+
+@{
+    ViewData["Title"] = "Detalle del equipo";
+}
+
+<div class="team-details-container">
+    <div class="team-header">
+        <h1>@Model.Nombre</h1>
+        <p class="team-id">ID: @Model.Id</p>
+    </div>
+
+    <div class="team-stats">
+        <div class="stat-item">
+            <h5>Partidos Jugados</h5>
+            <p>@Model.partidosJugados</p>
+        </div>
+        <div class="stat-item">
+            <h5>Partidos Ganados</h5>
+            <p>@Model.partidosGanados</p>
+        </div>
+        <div class="stat-item">
+            <h5>Partidos Empatados</h5>
+            <p>@Model.partidosEmpatados</p>
+        </div>
+        <div class="stat-item">
+            <h5>Partidos Perdidos</h5>
+            <p>@Model.partidosPerdidos</p>
+        </div>
+        <div class="stat-item">
+            <h5>Puntos</h5>
+            <p>@Model.Puntos</p>
+        </div>
+    </div>
+
+    <div class="team-actions">
+        <div class="action-buttons">
+            @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-success" })
+            <a href="@Url.Action("List")" class="btn btn-primary">Volver al listado</a>
+        </div>
+    </div>
+</div>
